@@ -248,7 +248,7 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > a > .post-title.archive {
-  font-size: 22px;
+  font-size: 29px;
 }
 .post-preview > a > .post-subtitle {
   margin: 0;
@@ -266,7 +266,7 @@ hr.small {
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #bfbfbf;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
@@ -275,7 +275,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 36px;
+    font-size: 29px;
   }
 }
 .section-heading {
@@ -295,24 +295,15 @@ hr.small {
 }
 .post-tags,
 .post-categories {
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.post-tags a,
-.post-categories a {
-  border-bottom: 1px dotted #ababab;
-  text-transform: uppercase;
-  margin-right: 10px;
-}
-.post-tags a:hover,
-.post-categories a:hover,
-.post-tags a:visited,
-.post-categories a:visited,
-.post-tags a:active,
-.post-categories a:active {
+a:hover,
+:visited,
+:active {
+  border-color: #337ab7;
   text-decoration: none;
-  border-bottom: none;
 }
 .archive-before-pagination {
   height: 30px;
@@ -628,4 +619,37 @@ th {
 td {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
+}
+.setTags {
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 999em;
+  padding: 0 10px 0 10px;
+  color: #bfbfbf;
+  line-height: 24px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 1px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  border-color: #bfbfbf;
+  vertical-align: middle;
+}
+.post-preview > .post-meta > a:hover,
+.post-preview > .post-meta > a:focus {
+  color: #0085a1;
+  text-decoration: none;
+}
+.myDiv {
+  display: inline-block;
+  padding: 0 0 0 0px;
+  color: #bfbfbf;
+  line-height: 26px;
+  height: 26px;
+  font-size: 19px;
+  text-decoration: none;
+  margin: 0 0px;
+  margin-bottom: 6px;
+  border-color: #bfbfbf;
+  vertical-align: middle;
 }
