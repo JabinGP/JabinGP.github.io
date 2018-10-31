@@ -38,12 +38,15 @@
   padding: 15px;
   padding-left: 33px;
   padding-top: 35px;
+  padding-bottom: 120px;
   border-radius: 12px;
   margin-bottom: 20px;
+  position: relative;
 }
 .post-preview > .addPost-meta {
-  margin-top: 60px;
-  margin-left: 65%;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
   margin-bottom: 0;
 }
 .post-preview > a > .addPost-title {
