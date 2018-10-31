@@ -53,3 +53,11 @@
   margin-right: 20px;
   margin-top: 15px;
 }
+.addFlat {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px;
+}
+.addpadding {
+  padding: 0 15px 0;
+}
