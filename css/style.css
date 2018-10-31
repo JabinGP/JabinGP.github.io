@@ -34,6 +34,7 @@ h6,
 body {
   font-size: 20px;
   color: #404040;
+  background-color: #f5f5f5;
 }
 p {
   line-height: 1.5;
@@ -649,7 +650,26 @@ td {
   font-size: 19px;
   text-decoration: none;
   margin: 0 0px;
+  margin-left: 10px;
   margin-bottom: 6px;
   border-color: #bfbfbf;
   vertical-align: middle;
+}
+.addPost-preview {
+  background-color: #fff;
+  margin: 0;
+  padding: 15px;
+  padding-left: 33px;
+  padding-top: 35px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.post-preview > .addPost-meta {
+  margin-top: 60px;
+  margin-left: 500px;
+  margin-bottom: 0;
+}
+.post-preview > a > .addPost-title {
+  margin-right: 20px;
+  margin-top: 15px;
 }
