@@ -37,8 +37,8 @@
   margin: 0;
   padding: 15px;
   padding-left: 33px;
-  padding-top: 35px;
-  padding-bottom: 120px;
+  padding-top: 17px;
+  padding-bottom: 50px;
   border-radius: 12px;
   margin-bottom: 20px;
   position: relative;
@@ -60,4 +60,17 @@
 }
 .addpadding {
   padding: 0 15px 0;
+}
+.addsub {
+  color: #bfbfbf;
+  font-size: 17px;
+  font-style: normal;
+  margin-right: 20px;
+  margin-top: 23px;
+}
+.addsub:hover {
+  color: #0085a1;
+}
+.suojin {
+  margin-left: 6em;
 }
