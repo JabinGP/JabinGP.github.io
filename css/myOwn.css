@@ -38,7 +38,7 @@
   padding-top: 3%;
   padding-left: 5%;
   padding-right: 4%;
-  padding-bottom: 12%;
+  padding-bottom: 6%;
   border-radius: 12px;
   margin-bottom: 20px;
   position: relative;
@@ -67,7 +67,7 @@ h2.post-title.addPost-title {
   color: #bfbfbf;
   font-size: 17px;
   font-style: normal;
-  margin-top: 4%;
+  margin-bottom: 25px;
 }
 .addsub:hover {
   color: #0085a1;
