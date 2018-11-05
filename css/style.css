@@ -658,10 +658,10 @@ td {
 .addPost-preview {
   background-color: #fff;
   margin: 0;
-  padding: 15px;
-  padding-left: 33px;
-  padding-top: 17px;
-  padding-bottom: 50px;
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-right: 3%;
+  padding-bottom: 10%;
   border-radius: 12px;
   margin-bottom: 20px;
   position: relative;
@@ -674,22 +674,23 @@ td {
 }
 .post-preview > a > .addPost-title {
   margin-right: 20px;
-  margin-top: 15px;
+}
+h2.post-title.addPost-title {
+  margin-top: 2%;
 }
 .addFlat {
   background-color: #fff;
   border-radius: 12px;
-  padding: 40px;
+  padding: 4%;
 }
 .addpadding {
-  padding: 0 15px 0;
+  padding: 0 2% 0;
 }
 .addsub {
   color: #bfbfbf;
   font-size: 17px;
   font-style: normal;
-  margin-right: 20px;
-  margin-top: 23px;
+  margin-top: 4%;
 }
 .addsub:hover {
   color: #0085a1;
