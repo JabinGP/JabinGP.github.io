@@ -94,6 +94,9 @@
   .addHeader {
     margin-bottom: 30px;
   }
+  .addFlat ul {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .setTags {
