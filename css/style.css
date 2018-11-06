@@ -703,6 +703,9 @@ td {
     font-size: 21px;
     margin-left: 12px;
   }
+  .addFlat h1 {
+    font-size: 28px;
+  }
   .addFlat p {
     margin-top: 15px;
     margin-bottom: 5px;
