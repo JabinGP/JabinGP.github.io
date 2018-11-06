@@ -621,80 +621,176 @@ td {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
-.setTags {
-  display: inline-block;
-  border: 1px solid rgba(255,255,255,0.8);
-  border-radius: 999em;
-  padding: 0 10px 0 10px;
-  color: #bfbfbf;
-  line-height: 24px;
-  font-size: 12px;
-  text-decoration: none;
-  margin: 0 1px;
-  margin-bottom: 6px;
-  cursor: pointer;
-  border-color: #bfbfbf;
-  vertical-align: middle;
+@media (max-width: 767px) {
+  .setTags {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 999em;
+    padding: 0 10px 0 10px;
+    color: #bfbfbf;
+    line-height: 24px;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 1px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border-color: #bfbfbf;
+    vertical-align: middle;
+  }
+  .post-preview > .post-meta > a:hover,
+  .post-preview > .post-meta > a:focus {
+    color: #0085a1;
+    text-decoration: none;
+  }
+  .myDiv {
+    display: inline-block;
+    padding: 0 0 0 0px;
+    color: #bfbfbf;
+    line-height: 26px;
+    height: 26px;
+    font-size: 16spx;
+    text-decoration: none;
+    margin: 0 0px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    border-color: #bfbfbf;
+    vertical-align: middle;
+  }
+  .addPost-preview {
+    background-color: #fff;
+    margin: 3;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 4%;
+    padding-bottom: 6%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .post-preview > .addPost-meta {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    margin-bottom: 0;
+  }
+  .post-preview > a > .addPost-title {
+    font-size: 21px;
+  }
+  .addsub {
+    color: #bfbfbf;
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 25px;
+  }
+  h2.post-title.addPost-title {
+    margin-top: 6px;
+  }
+  .addFlat {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 4%;
+  }
+  .addpadding {
+    padding: 0 2% 0;
+  }
+  .addsub:hover {
+    color: #0085a1;
+  }
+  .suojin {
+    margin-left: 6em;
+  }
+  .addFlat h3 {
+    font-size: 21px;
+    margin-left: 12px;
+  }
+  .addFlat p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .addFlat hr {
+    margin: 15px;
+  }
+  .addFlat table {
+    font-size: 16px;
+  }
 }
-.post-preview > .post-meta > a:hover,
-.post-preview > .post-meta > a:focus {
-  color: #0085a1;
-  text-decoration: none;
-}
-.myDiv {
-  display: inline-block;
-  padding: 0 0 0 0px;
-  color: #bfbfbf;
-  line-height: 26px;
-  height: 26px;
-  font-size: 19px;
-  text-decoration: none;
-  margin: 0 0px;
-  margin-left: 10px;
-  margin-bottom: 6px;
-  border-color: #bfbfbf;
-  vertical-align: middle;
-}
-.addPost-preview {
-  background-color: #fff;
-  margin: 0;
-  padding-top: 3%;
-  padding-left: 5%;
-  padding-right: 4%;
-  padding-bottom: 6%;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  position: relative;
-}
-.post-preview > .addPost-meta {
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
-  margin-bottom: 0;
-}
-.post-preview > a > .addPost-title {
-  margin-right: 20px;
-}
-h2.post-title.addPost-title {
-  margin-top: 2%;
-}
-.addFlat {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 4%;
-}
-.addpadding {
-  padding: 0 2% 0;
-}
-.addsub {
-  color: #bfbfbf;
-  font-size: 17px;
-  font-style: normal;
-  margin-bottom: 25px;
-}
-.addsub:hover {
-  color: #0085a1;
-}
-.suojin {
-  margin-left: 6em;
+@media only screen and (min-width: 768px) {
+  .setTags {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 999em;
+    padding: 0 10px 0 10px;
+    color: #bfbfbf;
+    line-height: 24px;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 1px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border-color: #bfbfbf;
+    vertical-align: middle;
+  }
+  .post-preview > .post-meta > a:hover,
+  .post-preview > .post-meta > a:focus {
+    color: #0085a1;
+    text-decoration: none;
+  }
+  .myDiv {
+    display: inline-block;
+    padding: 0 0 0 0px;
+    color: #bfbfbf;
+    line-height: 26px;
+    height: 26px;
+    font-size: 19px;
+    text-decoration: none;
+    margin: 0 0px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    border-color: #bfbfbf;
+    vertical-align: middle;
+  }
+  .addPost-preview {
+    background-color: #fff;
+    margin: 3;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 4%;
+    padding-bottom: 6%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .post-preview > .addPost-meta {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    margin-bottom: 0;
+  }
+  .post-preview > a > .addPost-title {
+    font-size: 26px;
+  }
+  .addsub {
+    color: #bfbfbf;
+    font-size: 17px;
+    font-style: normal;
+    margin-bottom: 25px;
+  }
+  h2.post-title.addPost-title {
+    margin-top: 2%;
+  }
+  .addFlat {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 4%;
+  }
+  .addpadding {
+    padding: 0 2% 0;
+  }
+  .addsub:hover {
+    color: #0085a1;
+  }
+  .suojin {
+    margin-left: 6em;
+  }
 }
