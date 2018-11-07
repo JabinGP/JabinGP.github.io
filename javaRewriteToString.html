@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="toString() 方法介绍toString()是Object类中的一个方法，而java中的所有类都继承自Object类，因此每个类中都有toString()方法，以下是toString()方法的源码：public String toString() &amp;#123;        return ge"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="JabinGP"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Java 中 toString() 方法的作用,以及如何重写 toString() 方法"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="toString() 方法介绍toString()是Object类中的一个方法，而java中的所有类都继承自Object类，因此每个类中都有toString()方法，以下是toString()方法的源码：public String toString() &amp;#123;        return ge"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="JabinGP Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://www.jabingp.cn/img/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://www.jabingp.cn/img/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Java 中 toString() 方法的作用,以及如何重写 toString() 方法 - JabinGP Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header addHeader" style="background-image: url('/img/javaToString.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="post-heading">
+                    <h1>Java 中 toString() 方法的作用,以及如何重写 toString() 方法</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        <div>
+                        
+                       
+                        
+                            2018-11-08
+                        
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="addpadding">
+            
+	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 addFlat">
+	            
+	            	                <h3 id="toString-方法介绍"><a href="#toString-方法介绍" class="headerlink" title="toString() 方法介绍"></a>toString() 方法介绍</h3><p>toString()是Object类中的一个方法，而java中的所有类都继承自Object类，因此每个类中都有toString()方法，以下是toString()方法的源码：<br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> getClass().getName() + <span class="string">"@"</span> + Integer.toHexString(hashCode());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>可以看出，java的原生toString()方法返回的是<code>类名 + &quot;@&quot; + 类对象的哈希code码</code>。</p>
+<hr>
+<h3 id="为什么要重写-toString-方法？"><a href="#为什么要重写-toString-方法？" class="headerlink" title="为什么要重写 toString() 方法？"></a>为什么要重写 toString() 方法？</h3><p>当我们想要让一个对象被输出到显示器的时候，往往调用一个对象的toString()方法，将对象的内容转换为字符串,而<code>类名 + &quot;@&quot; + 类对象的哈希code码</code>不能很好的代表每一个对象，所以我们要重写toString()方法。</p>
+<blockquote>
+<p>以下情况也会自动调用toString()方法:<br><code>System.out.println( 对象名 );</code></p>
+</blockquote>
+<hr>
+<h3 id="重写-toString-方法的规范"><a href="#重写-toString-方法的规范" class="headerlink" title="重写 toString() 方法的规范"></a>重写 toString() 方法的规范</h3><ol>
+<li>必须被声明为<code>public</code>。</li>
+<li>返回类型为<code>String</code>。</li>
+<li>方法的名称必须为toString,且<code>无参数</code>。</li>
+<li>方法体中不要使用输出方法<code>System.out.println()</code>。</li>
+</ol>
+<hr>
+<h3 id="重写toString-实例"><a href="#重写toString-实例" class="headerlink" title="重写toString()实例"></a>重写toString()实例</h3><p>假设有一个User类，类中有三个String私有属性: <code>id</code> , <code>name</code> , <code>gender</code> ，三个属性都有setter和getter方法。<br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//无参构造函数</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">(String inId,String inName,String inGender)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	<span class="comment">//有参构造函数</span></span><br><span class="line">        <span class="keyword">this</span>.id = inId;</span><br><span class="line">        <span class="keyword">this</span>.name = inName;</span><br><span class="line">        <span class="keyword">this</span>.gender = inGender;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//getter and setter</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> id;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(String id)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.id = id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getGender</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> gender;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setGender</span><span class="params">(String gender)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.gender = gender;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//end getter and setter</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在TestUser类中对这个类进行调用测试User继承自Object类的原生toString()方法:<br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestUser</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	<span class="comment">//创建User类的简单实例</span></span><br><span class="line">        User userOne = <span class="keyword">new</span> User(<span class="string">"1"</span>,<span class="string">"One"</span>,<span class="string">"Boy"</span>);</span><br><span class="line">        User userTwo = <span class="keyword">new</span> User(<span class="string">"2"</span>,<span class="string">"Two"</span>,<span class="string">"Girl"</span>);</span><br><span class="line">        User userThree = <span class="keyword">new</span> User(<span class="string">"3"</span>,<span class="string">"Three"</span>,<span class="string">"Boy"</span>);</span><br><span class="line">        <span class="comment">//使用System.out.println( 对象名.toString() )手动调用</span></span><br><span class="line">        System.out.println( userOne.toString() );</span><br><span class="line">        System.out.println( userTwo.toString() );</span><br><span class="line">        <span class="comment">//直接使用System.out.println( 对象名 )自动调用</span></span><br><span class="line">        System.out.println( userThree );</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>运行结果为:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lesson08.User@610455d6</span><br><span class="line">lesson08.User@511d50c0</span><br><span class="line">lesson08.User@60e53b93</span><br></pre></td></tr></table></figure></p>
+<p>重写User类的toString()方法后：<br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//无参构造函数</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">(String inId,String inName,String inGender)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	<span class="comment">//有参构造函数</span></span><br><span class="line">        <span class="keyword">this</span>.id = inId;</span><br><span class="line">        <span class="keyword">this</span>.name = inName;</span><br><span class="line">        <span class="keyword">this</span>.gender = inGender;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	<span class="keyword">return</span> ( <span class="keyword">this</span>.getClass().getName()+<span class="string">",ID:"</span>+getId()+<span class="string">",Name:"</span>+getName()+<span class="string">",Gender:"</span>+getGender() );</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/*以下重复代码省略</span></span><br><span class="line"><span class="comment">      getter and setter</span></span><br><span class="line"><span class="comment">      ...</span></span><br><span class="line"><span class="comment">      ...</span></span><br><span class="line"><span class="comment">      ...</span></span><br><span class="line"><span class="comment">      end getter and setter*/</span></span><br><span class="line">     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>再次执行TestUser类运行结果为：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lesson08.User,ID:1,Name:One,Gender:Boy</span><br><span class="line">lesson08.User,ID:2,Name:Two,Gender:Girl</span><br><span class="line">lesson08.User,ID:3,Name:Three,Gender:Boy</span><br></pre></td></tr></table></figure></p>
+<p>可以看到重写toString()方法已经生效，以上便是有关toString()方法的全部记录。</p>
+
+	
+	                
+	            </div>
+	            	          </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2018 JabinGP<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
