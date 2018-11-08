@@ -88,6 +88,9 @@
     margin-bottom: 5px;
     font-size: 16px;
   }
+  .addFlat ol {
+    font-size: 16px;
+  }
   .addFlat table {
     font-size: 16px;
   }
