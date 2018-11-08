@@ -716,6 +716,7 @@ td {
   }
   .addHeader {
     margin-bottom: 30px;
+    height: 320px;
   }
   .addFlat ul {
     font-size: 16px;
@@ -801,5 +802,6 @@ td {
   }
   .addHeader {
     margin-bottom: 30px;
+    height: 530px;
   }
 }
