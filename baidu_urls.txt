@@ -1,3 +1,5 @@
+http://www.jabingp.cn/DOCTYPE.html
+http://www.jabingp.cn/X-UA-Compatible.html
 http://www.jabingp.cn/GESHA.html
 http://www.jabingp.cn/BootstrapL01.html
 http://www.jabingp.cn/kissEsp49.html
