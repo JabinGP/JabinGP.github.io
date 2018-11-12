@@ -13,6 +13,11 @@
     
 
     
+        <meta name="description" content="什么是DOCTYPE？
+DOCTYPE是document type(文档类型)的简写，用来说明你用的XHTML或者HTML是什么版本。其中的DTD叫文档类型定义，里面包含了文档的规则，浏览器就根据你定义的DTD来解释你页面的标识，并展现出来。  
+
+要建立符合标准的网页，DOCTYPE声明是必不可少"/>
+    
 
     <!--Author-->
     
@@ -25,6 +30,11 @@
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="什么是DOCTYPE？
+DOCTYPE是document type(文档类型)的简写，用来说明你用的XHTML或者HTML是什么版本。其中的DTD叫文档类型定义，里面包含了文档的规则，浏览器就根据你定义的DTD来解释你页面的标识，并展现出来。  
+
+要建立符合标准的网页，DOCTYPE声明是必不可少"/>
     
 
     <!--Open Graph Site Name-->
@@ -155,7 +165,7 @@
     <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
 
-<header class="intro-header addHeader" style="background-image: url('/img/HTML.jpg')">
+<header class="intro-header addHeader" style="background-image: url('/img/IE.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -191,7 +201,39 @@
             
 	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 addFlat">
 	            
-	            	                
+	            	                <h3 id="什么是DOCTYPE？"><a href="#什么是DOCTYPE？" class="headerlink" title="什么是DOCTYPE？"></a>什么是DOCTYPE？</h3><ul>
+<li><p><code>DOCTYPE</code>是<code>document type</code>(文档类型)的简写，用来说明你用的XHTML或者HTML是什么版本。其中的<code>DTD</code>叫<code>文档类型定义</code>，里面包含了文档的规则，浏览器就根据你定义的DTD来解释你页面的标识，并展现出来。  </p>
+</li>
+<li><p>要建立符合<code>标准</code>的网页，<code>DOCTYPE声明</code>是必不可少的关键组成部分；除非你的XHTML/HTML确定了一个正确的DOCTYPE，否则你的标识和CSS都不会生效,也就是说如果没有这个DOCTYPE声明将会导致<code>CSS失效</code>，特别是没有声明或声明不正确将在标准浏览器下更是不能正常显示。</p>
+</li>
+</ul>
+<hr>
+<h3 id="声明DOCTYPE的规则"><a href="#声明DOCTYPE的规则" class="headerlink" title="声明DOCTYPE的规则"></a>声明DOCTYPE的规则</h3><ul>
+<li>声明位于文档中的最前面的位置，在所有代码和标识之上。</li>
+<li>标签没有结束标签。</li>
+<li>声明不区分大小写。</li>
+<li>声明不是一个 XHTML/HTML 标签；它是用来告知 Web 浏览器页面使用了哪种 XHTML/HTML 版本。</li>
+</ul>
+<hr>
+<h3 id="常见的DOCTYPE声明"><a href="#常见的DOCTYPE声明" class="headerlink" title="常见的DOCTYPE声明"></a>常见的DOCTYPE声明</h3><ul>
+<li><p>HTML5<br><code>&lt;!DOCTYPE html&gt;</code></p>
+</li>
+<li><p>HTML 4.01 Strict<br>这个 DTD 包含所有 HTML 元素和属性，但不包括表象或过时的元素（如 font ）。框架集是不允许的。<br><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</code></p>
+</li>
+<li><p>HTML 4.01 Transitional<br>这个 DTD 包含所有 HTML 元素和属性，包括表象或过时的元素（如 font ）。框架集是不允许的。<br><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code></p>
+</li>
+<li><p>HTML 4.01 Frameset<br>这个 DTD 与 HTML 4.01 Transitional 相同，但是允许使用框架集内容。<br><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot; &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;&gt;</code></p>
+</li>
+<li><p>XHTML 1.0 Strict<br>这个 DTD 包含所有 HTML 元素和属性，但不包括表象或过时的元素（如 font ）。框架集是不允许的。结构必须按标准格式的 XML 进行书写。<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</code></p>
+</li>
+<li><p>XHTML 1.0 Transitional<br>这个 DTD 包含所有 HTML 元素和属性，包括表象或过时的元素（如 font ）。框架集是不允许的。结构必须按标准格式的 XML 进行书写。<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</code></p>
+</li>
+<li><p>XHTML 1.0 Frameset<br>这个 DTD 与 XHTML 1.0 Transitional 相同，但是允许使用框架集内容。<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;</code></p>
+</li>
+<li><p>XHTML 1.1<br>这个 DTD 与 XHTML 1.0 Strict 相同，但是允许您添加模块（例如为东亚语言提供 ruby 支持）。<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</code></p>
+</li>
+</ul>
+
 	
 	                
 	            </div>
