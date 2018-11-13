@@ -303,7 +303,6 @@ hr.small {
 a:hover,
 :visited,
 :active {
-  border-color: #337ab7;
   text-decoration: none;
 }
 .archive-before-pagination {
