@@ -1,18 +1,22 @@
 @media (max-width: 767px) {
-  .setTags {
+  .post-preview > .setTags {
+    vertical-align: middle;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: inline-block;
-    border: 1px solid rgba(255,255,255,0.8);
-    border-radius: 999em;
-    padding: 0 10px 0 10px;
-    color: #bfbfbf;
+    background-color: #9bcd9b;
+    border-radius: 12px 0 12px 0;
+    padding: 8px;
+    color: #fff;
     line-height: 24px;
     font-size: 12px;
     text-decoration: none;
-    margin: 0 1px;
-    margin-bottom: 6px;
+    font-style: normal;
     cursor: pointer;
-    border-color: #bfbfbf;
     vertical-align: middle;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
   }
   .post-preview > .post-meta > a:hover,
   .post-preview > .post-meta > a:focus {
@@ -25,7 +29,7 @@
     color: #bfbfbf;
     line-height: 26px;
     height: 26px;
-    font-size: 16spx;
+    font-size: 16px;
     text-decoration: none;
     margin: 0 0px;
     margin-left: 10px;
@@ -39,15 +43,15 @@
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 4%;
-    padding-bottom: 6%;
+    padding-bottom: 5%;
     border-radius: 12px;
     margin-bottom: 20px;
     position: relative;
   }
   .post-preview > .addPost-meta {
     position: absolute;
-    right: 5%;
-    bottom: 5%;
+    right: 22%;
+    bottom: 1%;
     margin-bottom: 0;
   }
   .post-preview > a > .addPost-title {
@@ -103,20 +107,23 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .setTags {
+  .post-preview > .setTags {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: inline-block;
-    border: 1px solid rgba(255,255,255,0.8);
-    border-radius: 999em;
-    padding: 0 10px 0 10px;
-    color: #bfbfbf;
+    background-color: #9bcd9b;
+    border-radius: 0 12px 0 12px;
+    padding: 10px;
+    color: #fff;
     line-height: 24px;
-    font-size: 12px;
+    font-size: 13px;
     text-decoration: none;
-    margin: 0 1px;
-    margin-bottom: 6px;
+    font-style: normal;
     cursor: pointer;
-    border-color: #bfbfbf;
     vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
   }
   .post-preview > .post-meta > a:hover,
   .post-preview > .post-meta > a:focus {
@@ -131,7 +138,6 @@
     height: 26px;
     font-size: 19px;
     text-decoration: none;
-    margin: 0 0px;
     margin-left: 10px;
     margin-bottom: 6px;
     border-color: #bfbfbf;
@@ -139,7 +145,6 @@
   }
   .addPost-preview {
     background-color: #fff;
-    margin: 3;
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 4%;
@@ -165,6 +170,7 @@
   }
   h2.post-title.addPost-title {
     margin-top: 2%;
+    margin-right: 8%;
   }
   .addFlat {
     background-color: #fff;
