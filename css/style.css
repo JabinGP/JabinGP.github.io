@@ -490,11 +490,11 @@ article .container .row .pullquote.left {
   float: left;
 }
 figure.highlight {
-  background: #eee;
-  border: 1px solid #ddd;
+  background: #f7f7f9;
+  border: 1px solid #e1e1e8;
   margin-top: 15px;
-  padding: 7px 15px;
-  border-radius: 2px;
+  padding-top: 5px;
+  border-radius: 4px;
   text-shadow: 0 0 1px #fff;
   line-height: 1.6;
   overflow: auto;
@@ -524,12 +524,10 @@ figure.highlight table {
 figure.highlight table .gutter {
   color: #999;
   padding-right: 15px;
-  border-right: 1px solid #ddd;
   text-align: right;
 }
 figure.highlight table .code {
   padding-left: 15px;
-  border-left: 1px solid #fff;
   color: #666;
 }
 figure.highlight table .line {
@@ -617,7 +615,6 @@ th {
   padding-bottom: 0.5em;
 }
 td {
-  border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
 @media (max-width: 767px) {
@@ -639,6 +636,33 @@ td {
     right: 0;
     bottom: 0;
     margin-bottom: 0;
+  }
+  .post-preview > .setTags:hover {
+    color: #fff;
+    background-color: #bde2b9;
+  }
+  .addFlat > .setTags {
+    vertical-align: middle;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: inline-block;
+    background-color: #9bcd9b;
+    border-radius: 0 12px 0 12px;
+    padding: 8px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
+  }
+  .addFlat > .setTags:hover {
+    color: #fff;
+    background-color: #bde2b9;
   }
   .post-preview > .post-meta > a:hover,
   .post-preview > .post-meta > a:focus {
@@ -746,6 +770,32 @@ td {
     right: 0;
     top: 0;
     margin-bottom: 0;
+  }
+  .addFlat > .setTags {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: inline-block;
+    background-color: #9bcd9b;
+    border-radius: 0 12px 0 12px;
+    padding: 10px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 13px;
+    text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
+  }
+  .addFlat >.setTags:hover {
+    color: #fff;
+    background-color: #bde2b9;
+  }
+  .post-preview > .setTags:hover {
+    color: #fff;
+    background-color: #bde2b9;
   }
   .post-preview > .post-meta > a:hover,
   .post-preview > .post-meta > a:focus {

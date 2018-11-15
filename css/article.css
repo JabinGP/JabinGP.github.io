@@ -52,11 +52,11 @@ article .container .row .pullquote.left {
   float: left;
 }
 figure.highlight {
-  background: #eee;
-  border: 1px solid color-border;
+  background: #f7f7f9;
+  border: 1px solid #e1e1e8;
   margin-top: 15px;
-  padding: 7px 15px;
-  border-radius: 2px;
+  padding-top: 5px;
+  border-radius: 4px;
   text-shadow: 0 0 1px #fff;
   line-height: 1.6;
   overflow: auto;
@@ -86,12 +86,10 @@ figure.highlight table {
 figure.highlight table .gutter {
   color: color-meta;
   padding-right: 15px;
-  border-right: 1px solid color-border;
   text-align: right;
 }
 figure.highlight table .code {
   padding-left: 15px;
-  border-left: 1px solid #fff;
   color: #666;
 }
 figure.highlight table .line {
@@ -179,6 +177,5 @@ th {
   padding-bottom: 0.5em;
 }
 td {
-  border-bottom: 1px solid color-border;
   padding: 10px 0;
 }

@@ -19,7 +19,8 @@ MySql
 Apache  
 wordpress  
 
-1. 我们需要安装php、Mysql、Apache，其实一行代码就解决yum -y install httpd mysql mysql-server php php-mysql php-gd "/>
+1. 我们需要安装php、Mysql、Apache，其实一行代码就解决
+yum -y install httpd mysql mysql-server php php-mysql php-gd"/>
     
 
     <!--Author-->
@@ -40,7 +41,8 @@ MySql
 Apache  
 wordpress  
 
-1. 我们需要安装php、Mysql、Apache，其实一行代码就解决yum -y install httpd mysql mysql-server php php-mysql php-gd "/>
+1. 我们需要安装php、Mysql、Apache，其实一行代码就解决
+yum -y install httpd mysql mysql-server php php-mysql php-gd"/>
     
 
     <!--Open Graph Site Name-->
@@ -206,40 +208,41 @@ wordpress
             <div class="addpadding">
             
 	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 addFlat">
-	            
+	            	
+	            	<a class="setTags"  href="/tags/折腾教程/">折腾教程</a> 
 	            	                <h1 id="搭建wordpress的几个关键点"><a href="#搭建wordpress的几个关键点" class="headerlink" title="搭建wordpress的几个关键点"></a>搭建wordpress的几个关键点</h1><ul>
 <li>php  </li>
 <li>MySql  </li>
 <li>Apache  </li>
 <li>wordpress  </li>
 </ul>
-<h3 id="1-我们需要安装php、Mysql、Apache，其实一行代码就解决"><a href="#1-我们需要安装php、Mysql、Apache，其实一行代码就解决" class="headerlink" title="1. 我们需要安装php、Mysql、Apache，其实一行代码就解决"></a>1. 我们需要安装php、Mysql、Apache，其实一行代码就解决</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum -y install httpd mysql mysql-server php php-mysql php-gd php-xml</span><br></pre></td></tr></table></figure>
+<h3 id="1-我们需要安装php、Mysql、Apache，其实一行代码就解决"><a href="#1-我们需要安装php、Mysql、Apache，其实一行代码就解决" class="headerlink" title="1. 我们需要安装php、Mysql、Apache，其实一行代码就解决"></a>1. 我们需要安装php、Mysql、Apache，其实一行代码就解决</h3><hr>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum -y install httpd mysql mysql-server php php-mysql php-gd php-xml</span><br></pre></td></tr></table></figure>
 <p><em>ps：由于centos7自带MariaDB，这行代码里的mysql不会被安装成功，MariaDB可以看做mysql的分支，这里可以选择使用MariaDB代替mysql，也可以手动安装mysql：</em></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm</span><br><span class="line">yum -y install mysql57-community-release-el7-10.noarch.rpm</span><br><span class="line">yum -y install mysql-community-server</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="2-设置httpd、mysqld为开机自启动"><a href="#2-设置httpd、mysqld为开机自启动" class="headerlink" title="2. 设置httpd、mysqld为开机自启动"></a>2. 设置httpd、mysqld为开机自启动</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chkconfig httpd on</span><br><span class="line">chkconfig mysqld on</span><br></pre></td></tr></table></figure>
 <p><em>ps: 如果发现chkconfig mysqld on时提示没有找到，那么就是第一步时的安装问题，注意回到上一步手动安装mysql</em></p>
-<hr>
-<h3 id="3-启动mysqld和httpd服务"><a href="#3-启动mysqld和httpd服务" class="headerlink" title="3. 启动mysqld和httpd服务"></a>3. 启动mysqld和httpd服务</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">service httpd start</span><br><span class="line">service mysqld start</span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="4-配置数据库"><a href="#4-配置数据库" class="headerlink" title="4. 配置数据库"></a>4. 配置数据库</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure>
-<hr>
+<h3 id="3-启动mysqld和httpd服务"><a href="#3-启动mysqld和httpd服务" class="headerlink" title="3. 启动mysqld和httpd服务"></a>3. 启动mysqld和httpd服务</h3><hr>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">service httpd start</span><br><span class="line">service mysqld start</span><br></pre></td></tr></table></figure>
+<h3 id="4-配置数据库"><a href="#4-配置数据库" class="headerlink" title="4. 配置数据库"></a>4. 配置数据库</h3><hr>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure>
 <p>接下来会弹出一些问题,可能会让你先输入密码，如果是第一次装是没有密码的，直接敲击回车就可以进入下面的问题了</p>
 <blockquote>
 <p>Set root password? [Y/n]<br><em>设置root密码（最好自己设置密码，选Y）</em><br>anonymous users? [Y/n]<br><em>删除匿名用户（选Y）</em><br>Disallow root login remotely? [Y/n]<br><em>禁止root用户远程登录（选n）</em><br>Remove test database and access to it? [Y/n]<br><em>删除默认的 test 数据库（选Y)</em><br>Reload privilege tables now? [Y/n]<br><em>是否马上应用最新的设置（选Y)</em></p>
 </blockquote>
-<hr>
-<h3 id="5-登陆mysql为wordpress创建数据库"><a href="#5-登陆mysql为wordpress创建数据库" class="headerlink" title="5. 登陆mysql为wordpress创建数据库"></a>5. 登陆mysql为wordpress创建数据库</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql -uroot -p设置的密码</span><br></pre></td></tr></table></figure>
+<h3 id="5-登陆mysql为wordpress创建数据库"><a href="#5-登陆mysql为wordpress创建数据库" class="headerlink" title="5. 登陆mysql为wordpress创建数据库"></a>5. 登陆mysql为wordpress创建数据库</h3><hr>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql -uroot -p设置的密码</span><br></pre></td></tr></table></figure>
 <p>没错误的话会出现 mysql&gt;<br>这时候输入以下代码，注意不要漏了分号，否则无法执行：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">create database wordpress;</span><br></pre></td></tr></table></figure></p>
 <p>执行完按Ctrl+C可以退出数据库</p>
-<hr>
-<h3 id="6-安装wordpress"><a href="#6-安装wordpress" class="headerlink" title="6. 安装wordpress"></a>6. 安装wordpress</h3><p>进入wordpress官网下载CH中文版的wordpress文件，没意外的话是个.zip文件。使用WinSCP连接到服务器,把文件复制到/var/www/html文件夹下，然后输入一下代码：cd /var/www/html定位到html下，然后使用unzip工具来解压缩wordpress压缩包，如果没有安装zip工具的话先安装一下<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install -y unzip zip</span><br><span class="line">unzip 你下载的wordpress文件名</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h3 id="7-配置wordpress"><a href="#7-配置wordpress" class="headerlink" title="7. 配置wordpress"></a>7. 配置wordpress</h3><p>使用WinSCP在var/www/html下然后找到wp-config-sample.php文件，这个是wordpress为你提供的配置文件模板，你需要打开它然后修改，找到以下三行然后更改第二个单引号中的内容</p>
+<h3 id="6-安装wordpress"><a href="#6-安装wordpress" class="headerlink" title="6. 安装wordpress"></a>6. 安装wordpress</h3><hr>
+<p>进入wordpress官网下载CH中文版的wordpress文件，没意外的话是个.zip文件。使用WinSCP连接到服务器,把文件复制到/var/www/html文件夹下，然后输入一下代码：cd /var/www/html定位到html下，然后使用unzip工具来解压缩wordpress压缩包，如果没有安装zip工具的话先安装一下<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install -y unzip zip</span><br><span class="line">unzip 你下载的wordpress文件名</span><br></pre></td></tr></table></figure></p>
+<h3 id="7-配置wordpress"><a href="#7-配置wordpress" class="headerlink" title="7. 配置wordpress"></a>7. 配置wordpress</h3><hr>
+<p>使用WinSCP在var/www/html下然后找到wp-config-sample.php文件，这个是wordpress为你提供的配置文件模板，你需要打开它然后修改，找到以下三行然后更改第二个单引号中的内容</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">define(<span class="string">'DB_NAME'</span>, <span class="string">'wordpress'</span>); //修改为之前创建的wordpress</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">define(<span class="string">'DB_USER'</span>, <span class="string">'root'</span>);//数据库用户名root</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">define(<span class="string">'DB_PASSWORD'</span>, <span class="string">'root'</span>);//数据库密码改为自己设定的值</span><br></pre></td></tr></table></figure>
 <p>修改完保存为wp-config.php文件然后放置在var/www/html/wordpress/下就可以了</p>
-<hr>
-<h3 id="8-登陆。"><a href="#8-登陆。" class="headerlink" title="8. 登陆。"></a>8. 登陆。</h3><p>打开浏览器，输入服务器的ip地址，然后再地址后面加上/wordpress，例如本博客地址207.148.92.228/wordpress/，如果能弹出则按界面进行最后的信息录入，如果不能则确保上面步骤无误的情况下进行下面的步骤：</p>
+<h3 id="8-登陆。"><a href="#8-登陆。" class="headerlink" title="8. 登陆。"></a>8. 登陆。</h3><hr>
+<p>打开浏览器，输入服务器的ip地址，然后再地址后面加上/wordpress，例如本博客地址207.148.92.228/wordpress/，如果能弹出则按界面进行最后的信息录入，如果不能则确保上面步骤无误的情况下进行下面的步骤：</p>
 <p>检查防火墙，防火墙对应端口不打开的话是无法连接的，可以仅开放对应端口，但是我索性直接把防火墙关闭了：</p>
 <pre><code class="bash">firewall-cmd --state//查看防火墙状态
 systemctl stop firewalld.service//停止防火墙服务

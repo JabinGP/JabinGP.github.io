@@ -14,12 +14,13 @@
 
     
         <meta name="description" content="搭建Seafile的关键点
+
 MariaDB 或者 MySQL 服务器 (MariaDB 是 MySQL 的分支)
 Seafile安装包
 python 2.7 (从 Seafile 5.1 开始，python 版本最低要求为2.7）
 python-setuptools
 python-imaging
-p"/>
+"/>
     
 
     <!--Author-->
@@ -35,12 +36,13 @@ p"/>
     <!--Open Graph Description-->
     
         <meta property="og:description" content="搭建Seafile的关键点
+
 MariaDB 或者 MySQL 服务器 (MariaDB 是 MySQL 的分支)
 Seafile安装包
 python 2.7 (从 Seafile 5.1 开始，python 版本最低要求为2.7）
 python-setuptools
 python-imaging
-p"/>
+"/>
     
 
     <!--Open Graph Site Name-->
@@ -206,8 +208,10 @@ p"/>
             <div class="addpadding">
             
 	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 addFlat">
-	            
-	            	                <h2 id="搭建Seafile的关键点"><a href="#搭建Seafile的关键点" class="headerlink" title="搭建Seafile的关键点"></a>搭建Seafile的关键点</h2><ul>
+	            	
+	            	<a class="setTags"  href="/tags/折腾教程/">折腾教程</a> 
+	            	                <h2 id="搭建Seafile的关键点"><a href="#搭建Seafile的关键点" class="headerlink" title="搭建Seafile的关键点"></a>搭建Seafile的关键点</h2><hr>
+<ul>
 <li>MariaDB 或者 MySQL 服务器 (MariaDB 是 MySQL 的分支)</li>
 <li>Seafile安装包</li>
 <li>python 2.7 (从 Seafile 5.1 开始，python 版本最低要求为2.7）</li>
@@ -218,8 +222,8 @@ p"/>
 <li>python-urllib3</li>
 <li>python-memcache (或者 python-memcached)</li>
 </ul>
-<hr>
-<h3 id="安装运行环境"><a href="#安装运行环境" class="headerlink" title="安装运行环境"></a>安装运行环境</h3><ul>
+<h3 id="安装运行环境"><a href="#安装运行环境" class="headerlink" title="安装运行环境"></a>安装运行环境</h3><hr>
+<ul>
 <li><p>mysql</p>
 <blockquote>
 <p>由于centos7自带<code>MariaDB</code>，运行yum -y install mysql mysql-server mysql无法 成功安装mysql，MariaDB可以看做mysql的分支，这里可以选择使用<code>MariaDB</code>代替mysql，也可以手动安装mysql  </p>
@@ -235,8 +239,8 @@ p"/>
 <li><p>Seafile文件<br>进入<a href="https://www.seafile.com/download/" target="_blank" rel="noopener">Seafile官网下载页面</a>，下载Linux服务端，在本地保存。</p>
 </li>
 </ul>
-<hr>
-<h3 id="安装Seafile"><a href="#安装Seafile" class="headerlink" title="安装Seafile"></a>安装Seafile</h3><blockquote>
+<h3 id="安装Seafile"><a href="#安装Seafile" class="headerlink" title="安装Seafile"></a>安装Seafile</h3><hr>
+<blockquote>
 <p>ps：假设你的名称为<code>haiwen</code> ，并且下载的Seafile文件名称为<code>seafile-server</code>。<br>先选择一个自己喜欢的目录，以下以<code>/home</code>为例。</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir haiwen                                 //创建一个文件夹haiwen，/home/haiwen</span><br><span class="line">mv seafile-server haiwen             //将下载的文件移动到创建的haiwen文件夹中</span><br><span class="line">cd haiwen		                       //进入haiwen文件夹</span><br><span class="line">tar -xzf seafile-server                    //解压seafile压缩文件</span><br><span class="line">mkdir installed		                   //创建一个installed文件夹用于存放无用的压缩包</span><br><span class="line">mv seafile-server  installed	//将已经解压过的seafile压缩包移动到文件夹installed</span><br></pre></td></tr></table></figure>
@@ -257,7 +261,8 @@ p"/>
 </ol>
 </blockquote>
 <p>在这里, 你会被要求选择一种创建 Seafile 数据库的方式：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-------------------------------------------------------</span><br><span class="line">Please choose a way to initialize seafile databases:</span><br><span class="line">-------------------------------------------------------</span><br><span class="line"></span><br><span class="line">[1] Create new ccnet/seafile/seahub databases</span><br><span class="line">[2] Use existing ccnet/seafile/seahub databases</span><br><span class="line">如果选择1, 你需要提供根密码. 脚本程序会创建数据库和用户。</span><br><span class="line">如果选择2, ccnet/seafile/seahub 数据库应该已经被你（或者其他人）提前创建。</span><br></pre></td></tr></table></figure></p>
-<h3 id="启动-Seafile-服务器"><a href="#启动-Seafile-服务器" class="headerlink" title="启动 Seafile 服务器"></a>启动 Seafile 服务器</h3><p>在 seafile-server 目录下，运行如下命令 </p>
+<h3 id="启动-Seafile-服务器"><a href="#启动-Seafile-服务器" class="headerlink" title="启动 Seafile 服务器"></a>启动 Seafile 服务器</h3><hr>
+<p>在 seafile-server 目录下，运行如下命令 </p>
 <ul>
 <li>启动 Seafile：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">./seafile.sh start # 启动 Seafile 服务</span><br></pre></td></tr></table></figure>
 </li>
