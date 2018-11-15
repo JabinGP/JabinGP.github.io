@@ -685,13 +685,12 @@ td {
   }
   .addPost-preview {
     background-color: #fff;
-    margin: 3;
-    padding-top: 3%;
-    padding-left: 5%;
+    padding-top: 5%;
+    padding-left: 6%;
     padding-right: 4%;
-    padding-bottom: 5%;
+    padding-bottom: 6%;
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     position: relative;
   }
   .post-preview > .addPost-meta {
