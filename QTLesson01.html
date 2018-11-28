@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="QT里的main.cpp
+#include &#34;dialog.h&#34;  //包含了要完成功能的类的定义，用到哪个组件就要加入哪个组件的头文件#include &amp;lt;QApplication&amp;gt; /* 	Application 类的定义。在每个使用Qt图形化程序中都必须使用一个QApplicatio"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="JabinGP"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="QT 学习 lesson01"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="QT里的main.cpp
+#include &#34;dialog.h&#34;  //包含了要完成功能的类的定义，用到哪个组件就要加入哪个组件的头文件#include &amp;lt;QApplication&amp;gt; /* 	Application 类的定义。在每个使用Qt图形化程序中都必须使用一个QApplicatio"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="JabinGP Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://www.jabingp.cn/img/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://www.jabingp.cn/img/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>QT 学习 lesson01 - JabinGP Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header addHeader" style="background-image: url('/img/QT.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="post-heading">
+                    <h1>QT 学习 lesson01</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        <div>
+                        
+                       
+                        
+                            2018-11-19
+                        
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="addpadding">
+            
+	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 addFlat">
+	            	
+	            	<a class="setTags"  href="/tags/学习笔记/">学习笔记</a> 
+	            	                <h3 id="QT里的main-cpp"><a href="#QT里的main-cpp" class="headerlink" title="QT里的main.cpp"></a>QT里的main.cpp</h3><hr>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"dialog.h"</span>  <span class="comment">//包含了要完成功能的类的定义，用到哪个组件就要加入哪个组件的头文件</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QApplication&gt; </span></span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> 	Application 类的定义。在每个使用Qt图形化程序中都必须使用一个QApplication对象，</span></span><br><span class="line"><span class="comment"> 	Application管理了各种各样的图形化应用程序的广泛资源、基本设置、控制流及事件处理等。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">   	应用程序的入口，main()函数只需要在将控制转交给Qt库之前执行初始化，然后Qt库通过实践向</span></span><br><span class="line"><span class="comment">   	程序告知用户的行为。所有Qt程序中都必须有且只有一个main()函数。main()函数有两个参数</span></span><br><span class="line"><span class="comment">   	argc和argv，argc是命令行变量的数量，argv是命令行变量的数组。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="function">QApplication <span class="title">a</span><span class="params">(argc, argv)</span></span>;	</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    	a被创建并且处理这些命令行变量。所有被QT识别的命令行参数化都将从argv中被移去</span></span><br><span class="line"><span class="comment">    	（并且argc也因此而减少）。</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    </span><br><span class="line">    Dialog w; <span class="comment">//创建一个对话框对象，在该类中完成各种功能</span></span><br><span class="line">    </span><br><span class="line">    w.show(); <span class="comment">//当创建一个窗口部件的时候，默认它是不可见的，必须调用show()使其可见</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> a.exec(); </span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    	程序进入消息循环，等待可能的输入进行响应。这里就是main()函数将控制权转交给Qt，</span></span><br><span class="line"><span class="comment">    	Qt完成时间处理工作，当应用程序退出的时候exec()函数的值就会返回。在exec()函数</span></span><br><span class="line"><span class="comment">    	中，Qt接受并处理用户和系统的时间并且将他们传递给适当的窗口部件。</span></span><br><span class="line"><span class="comment">    */</span>	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="QT里的-ui"><a href="#QT里的-ui" class="headerlink" title="QT里的.ui"></a>QT里的.ui</h3><hr>
+<p>双击.ui文件可以呼出Qt designer界面，Qt只允许使用Qt designer图形界面进行对.ui文件进行修改，ui文件为xml格式的，里面的语法非常类似html。<br><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ui</span> <span class="attr">version</span>=<span class="string">"4.0"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">class</span>&gt;</span>Dialog<span class="tag">&lt;/<span class="name">class</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">widget</span> <span class="attr">class</span>=<span class="string">"QDialog"</span> <span class="attr">name</span>=<span class="string">"Dialog"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"geometry"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">rect</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">x</span>&gt;</span>0<span class="tag">&lt;/<span class="name">x</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">y</span>&gt;</span>0<span class="tag">&lt;/<span class="name">y</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">width</span>&gt;</span>400<span class="tag">&lt;/<span class="name">width</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">height</span>&gt;</span>300<span class="tag">&lt;/<span class="name">height</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"windowTitle"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">string</span>&gt;</span>Dialog<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">widget</span> <span class="attr">class</span>=<span class="string">"QLabel"</span> <span class="attr">name</span>=<span class="string">"radiusLabel"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"geometry"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">x</span>&gt;</span>40<span class="tag">&lt;/<span class="name">x</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">y</span>&gt;</span>120<span class="tag">&lt;/<span class="name">y</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">width</span>&gt;</span>41<span class="tag">&lt;/<span class="name">width</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">height</span>&gt;</span>31<span class="tag">&lt;/<span class="name">height</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">string</span>&gt;</span>半径：<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"wordWrap"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bool</span>&gt;</span>false<span class="tag">&lt;/<span class="name">bool</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">widget</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">widget</span> <span class="attr">class</span>=<span class="string">"QLCDNumber"</span> <span class="attr">name</span>=<span class="string">"lcdNumber"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"geometry"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">x</span>&gt;</span>320<span class="tag">&lt;/<span class="name">x</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">y</span>&gt;</span>0<span class="tag">&lt;/<span class="name">y</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">width</span>&gt;</span>81<span class="tag">&lt;/<span class="name">width</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">height</span>&gt;</span>61<span class="tag">&lt;/<span class="name">height</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"intValue"</span> <span class="attr">stdset</span>=<span class="string">"0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">number</span>&gt;</span>123<span class="tag">&lt;/<span class="name">number</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">widget</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">widget</span> <span class="attr">class</span>=<span class="string">"QLabel"</span> <span class="attr">name</span>=<span class="string">"areaLabel_1"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"geometry"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">x</span>&gt;</span>210<span class="tag">&lt;/<span class="name">x</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">y</span>&gt;</span>125<span class="tag">&lt;/<span class="name">y</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">width</span>&gt;</span>59<span class="tag">&lt;/<span class="name">width</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">height</span>&gt;</span>21<span class="tag">&lt;/<span class="name">height</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">string</span>&gt;</span>面积:<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">widget</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">widget</span> <span class="attr">class</span>=<span class="string">"QPushButton"</span> <span class="attr">name</span>=<span class="string">"countBtn"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"geometry"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">x</span>&gt;</span>250<span class="tag">&lt;/<span class="name">x</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">y</span>&gt;</span>200<span class="tag">&lt;/<span class="name">y</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">width</span>&gt;</span>111<span class="tag">&lt;/<span class="name">width</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">height</span>&gt;</span>41<span class="tag">&lt;/<span class="name">height</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">string</span>&gt;</span>计算<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"autoDefault"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bool</span>&gt;</span>true<span class="tag">&lt;/<span class="name">bool</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">widget</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">widget</span> <span class="attr">class</span>=<span class="string">"QLineEdit"</span> <span class="attr">name</span>=<span class="string">"radiusLineEdit"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"geometry"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">x</span>&gt;</span>80<span class="tag">&lt;/<span class="name">x</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">y</span>&gt;</span>120<span class="tag">&lt;/<span class="name">y</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">width</span>&gt;</span>101<span class="tag">&lt;/<span class="name">width</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">height</span>&gt;</span>31<span class="tag">&lt;/<span class="name">height</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">widget</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">widget</span> <span class="attr">class</span>=<span class="string">"QLabel"</span> <span class="attr">name</span>=<span class="string">"areaLabel2"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"geometry"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">x</span>&gt;</span>260<span class="tag">&lt;/<span class="name">x</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">y</span>&gt;</span>120<span class="tag">&lt;/<span class="name">y</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">width</span>&gt;</span>91<span class="tag">&lt;/<span class="name">width</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">height</span>&gt;</span>31<span class="tag">&lt;/<span class="name">height</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"frameShape"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">enum</span>&gt;</span>QFrame::WinPanel<span class="tag">&lt;/<span class="name">enum</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"frameShadow"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">enum</span>&gt;</span>QFrame::Sunken<span class="tag">&lt;/<span class="name">enum</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">string</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">widget</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">widget</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">layoutdefault</span> <span class="attr">spacing</span>=<span class="string">"6"</span> <span class="attr">margin</span>=<span class="string">"11"</span>/&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">resources</span>/&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">connections</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ui</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="鼠标点击事件"><a href="#鼠标点击事件" class="headerlink" title="鼠标点击事件"></a>鼠标点击事件</h3><hr>
+<p>在ui中编辑完控件的位置，如果需要添加点击功能，可以右键选择转到槽，然后选择<code>onClick()</code>，选择后会在dialog.cpp（这里因为创建时选择的就是dialog，所以系统自动生成的是dialog.h和dialog.cpp）自动生成对应的函数，在生成的空函数需要里添加对应的事件代码：</p>
+<ul>
+<li><p>dialog.h(全由系统自动生成)</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> DIALOG_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> DIALOG_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QDialog&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> Ui &#123;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dialog</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dialog</span> :</span> <span class="keyword">public</span> QDialog</span><br><span class="line">&#123;</span><br><span class="line">    Q_OBJECT</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">explicit</span> <span class="title">Dialog</span><span class="params">(QWidget *parent = <span class="literal">nullptr</span>)</span></span>;</span><br><span class="line">    ~Dialog();</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> slots:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">on_pushButton_clicked</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">on_countBtn_clicked</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    Ui::Dialog *ui;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">// DIALOG_H</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>dialog.cpp</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"dialog.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"ui_dialog.h"</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">double</span> PI = <span class="number">3.1415926535</span>;</span><br><span class="line">Dialog::Dialog(QWidget *parent) :</span><br><span class="line">    QDialog(parent),</span><br><span class="line">    ui(<span class="keyword">new</span> Ui::Dialog)</span><br><span class="line">&#123;</span><br><span class="line">    ui-&gt;setupUi(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Dialog::~Dialog()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">delete</span> ui;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> Dialog::on_countBtn_clicked()	<span class="comment">//这里是系统自动生成的点击事件函数</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">//以下是手动填写的事件函数实现</span></span><br><span class="line">    <span class="keyword">bool</span> ok;</span><br><span class="line">    QString valueStr = ui -&gt;radiusLineEdit -&gt;text();</span><br><span class="line">    <span class="keyword">double</span> valueDouble = valueStr.toDouble(&amp;ok);</span><br><span class="line">    <span class="keyword">double</span> area = valueDouble * valueDouble * PI;<span class="comment">//计算圆面积</span></span><br><span class="line">    QString showStr;</span><br><span class="line">    showStr.setNum(area);</span><br><span class="line">    ui -&gt; areaLabel2 -&gt;setText(showStr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="文本改变事件"><a href="#文本改变事件" class="headerlink" title="文本改变事件"></a>文本改变事件</h3><p>以上代码实现了鼠标点击<code>计算</code>按钮的时候，根据左边lineEdit控件里输入的数字，得到相应的结果并显示在右边的Label中，通过文本改变事件可以达到输入数字后自动在右边的Label中显示结果的效果。</p>
+<ul>
+<li>在ui中找到lineEdit，右键转到槽，选择textChanged(QString)。</li>
+<li>在系统自动生成的空函数中添加函数实现<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> Dialog::on_radiusLineEdit_textChanged(<span class="keyword">const</span> QString &amp;arg1)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">bool</span> ok;</span><br><span class="line">    <span class="comment">// QString valueStr = ui -&gt;radiusLineEdit -&gt;text();</span></span><br><span class="line">    <span class="comment">// 系统会自动传参一个arg1，这个是修改后的值，可以直接引用，就不用进行一系列读取了。</span></span><br><span class="line">    <span class="keyword">double</span> valueDouble = arg1.toDouble(&amp;ok);</span><br><span class="line">    <span class="keyword">double</span> area = valueDouble * valueDouble * PI;<span class="comment">//计算圆面积</span></span><br><span class="line">    QString showStr;</span><br><span class="line">    showStr.setNum(area);</span><br><span class="line">    ui -&gt; areaLabel2 -&gt;setText(showStr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>上面这个函数在lineEdit改变的时候会自动调用，达到输入后自动出结果的效果</p>
+
+	
+	                
+	            </div>
+	            	          </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2018 JabinGP<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
