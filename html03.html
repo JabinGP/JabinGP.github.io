@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="html定位 &amp;amp; 层模型
+
+小经验：去除浏览器默认设置的边距，&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;在很多浏览器中都有默认的值10px，最好在开始写css之前手动设置margin值为0。
+
+ body&amp;#123;    margin: 0;&amp;#125;/*或者设置全局通配*/*&amp;"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="JabinGP"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="html &amp; css学习笔记day03"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="html定位 &amp;amp; 层模型
+
+小经验：去除浏览器默认设置的边距，&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;在很多浏览器中都有默认的值10px，最好在开始写css之前手动设置margin值为0。
+
+ body&amp;#123;    margin: 0;&amp;#125;/*或者设置全局通配*/*&amp;"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="JabinGP Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://www.jabingp.cn/img/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://www.jabingp.cn/img/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>html &amp; css学习笔记day03 - JabinGP Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header addHeader" style="background-image: url('/img/html.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="post-heading">
+                    <h1>html & css学习笔记day03</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        <div>
+                        
+                       
+                        
+                            2018-11-30
+                        
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="addpadding">
+            
+	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 addFlat">
+	            	
+	            	<a class="setTags"  href="/tags/学习笔记/">学习笔记</a> 
+	            	                <h2 id="html定位-amp-层模型"><a href="#html定位-amp-层模型" class="headerlink" title="html定位 &amp; 层模型"></a>html定位 &amp; 层模型</h2><hr>
+<blockquote>
+<p>小经验：去除浏览器默认设置的边距，<code>&lt;body&gt;&lt;/body&gt;</code>在很多浏览器中都有默认的值10px，最好在开始写css之前手动设置margin值为0。</p>
+</blockquote>
+ <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*或者设置全局通配*/</span></span><br><span class="line">*</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="position怎么使用？"><a href="#position怎么使用？" class="headerlink" title="position怎么使用？"></a>position怎么使用？</h3><hr>
+<blockquote>
+<p>css中加入<code>position:</code>,然后用 left / right与top / bottom两组中任何两个组合进行定位。</p>
+</blockquote>
+<h3 id="position的属性值："><a href="#position的属性值：" class="headerlink" title="position的属性值："></a>position的属性值：</h3><hr>
+<ul>
+<li><h4 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h4><p>设置了absolute后，会脱离原来的层进行定位。每一个设置了absolute的元素会成为一个新的层。</p>
+</li>
+<li><h4 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h4><p>和absolute功能类似，但定位方式为，保留原来的位置定位。</p>
+</li>
+<li><h4 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h4><p>”以不变应万变”，当一个元素需要在页面中位置不随滚动条滚动而变化时，就需要用到此属性。</p>
+</li>
+<li><h4 id="static"><a href="#static" class="headerlink" title="static"></a>static</h4><p>默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。</p>
+</li>
+<li><h4 id="inherit"><a href="#inherit" class="headerlink" title="inherit"></a>inherit</h4><p>规定应该从父元素继承 position 属性的值。</p>
+</li>
+</ul>
+<p><strong>总结：absolute是相对于<code>最近的可定位父级元素</code>定位，如果都没有则相对于文档定位。relative 相对于元素<code>原来的位置</code>进行定位。</strong></p>
+<h3 id="不同属性定位有何区别"><a href="#不同属性定位有何区别" class="headerlink" title="不同属性定位有何区别?"></a>不同属性定位有何区别?</h3><hr>
+<p>先看看这段html</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meat</span> <span class="attr">charset</span> = <span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        body</span></span><br><span class="line"><span class="undefined">    &#123;</span></span><br><span class="line"><span class="undefined">      margin: 0px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="css">       <span class="selector-class">.wrapper</span></span></span><br><span class="line"><span class="undefined">     &#123;</span></span><br><span class="line"><span class="undefined">        margin-left:  100px;</span></span><br><span class="line"><span class="undefined">        width: 200px;</span></span><br><span class="line"><span class="undefined">        height: 200px;</span></span><br><span class="line"><span class="undefined">        background: orange;</span></span><br><span class="line"><span class="undefined">     &#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.content</span></span></span><br><span class="line"><span class="undefined">    &#123;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">margin-left</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line"><span class="undefined">      width: 100px;</span></span><br><span class="line"><span class="undefined">      height: 100px;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">background</span><span class="selector-pseudo">:black</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.box</span></span></span><br><span class="line"><span class="undefined">    &#123;</span></span><br><span class="line"><span class="undefined">      width: 50px;</span></span><br><span class="line"><span class="undefined">      height: 50px;</span></span><br><span class="line"><span class="undefined">      background: yellow;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span> = <span class="string">"wrapper"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span> = <span class="string">"content"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span> = <span class="string">"box"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这段代码运行的结果是：</p>
+<p>那么如果给<code>box</code>加上<code>position: absolute;</code>会发生什么？</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute; <span class="comment">/*加入这行*/</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">background</span>: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果如下</p>
+<p>运行结果没有变化，为什么没有打破原有的布局？这是因为absolute还没有开始生效，如果加上left的值：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute; </span><br><span class="line">  <span class="attribute">left</span>: <span class="number">15px</span>; <span class="comment">/*加入这行*/</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">background</span>: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结果是黄色盒子打破布局到了距离浏览器边框左边15px的位置。但是如果给父元素同时设置上position属性，结果就大有不同：</p>
+<ul>
+<li>content设置position属性</li>
+</ul>
+<ul>
+<li>wrapper设置position属性</li>
+</ul>
+<ul>
+<li>两者同时设置position属性</li>
+</ul>
+<p><strong>总结：设置了absolute后，至少设置 left/right , top/bottom 两对中任意一个属性，absolute才开始生效，而absolute生效的时候会从父级元素开始找设置了position属性的元素，如果找到了就以最近的满足条件的元素为参照，如果找不到则以最底层的body为参照定位。</strong></p>
+<h3 id="如何在定位的时候选择position的值"><a href="#如何在定位的时候选择position的值" class="headerlink" title="如何在定位的时候选择position的值"></a>如何在定位的时候选择position的值</h3><hr>
+<ul>
+<li><p>用relative作为参照</p>
+</li>
+<li><p>用absolute作为定位</p>
+</li>
+<li><p>好处：如果让absolute定位，让后面的元素全都脱离了定位，影响了后续元素</p>
+<p>而relative是以原来的位置进行定位，不会影响后面的元素。</p>
+</li>
+</ul>
+<h3 id="页面如何居中"><a href="#页面如何居中" class="headerlink" title="页面如何居中"></a>页面如何居中</h3><hr>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meat</span> <span class="attr">charset</span> = <span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    body</span></span><br><span class="line"><span class="undefined">    &#123;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">margin</span><span class="selector-pseudo">:0px</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.wrapper</span></span></span><br><span class="line"><span class="undefined">    &#123;</span></span><br><span class="line"><span class="undefined">      position: absolute;</span></span><br><span class="line"><span class="undefined">      left: 50%;</span></span><br><span class="line"><span class="undefined">      top: 50%;</span></span><br><span class="line"><span class="undefined">      width: 100px;</span></span><br><span class="line"><span class="undefined">      height: 100px;</span></span><br><span class="line"><span class="undefined">      background: red;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span> = <span class="string">"wrapper"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这样的页面，虽然接近动态居中，但是还是有些许偏移，其实是因为定位是以左顶点为基点进行定位的，所以就要让元素向上左移动半个身位就可以居中。</p>
+<p>如何调整半个身位：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">.wrapper</span><br><span class="line">&#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  left: 50%;</span><br><span class="line">  top: 50%;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background: red;</span><br><span class="line">  margin-left: -50px; //加入这两行</span><br><span class="line">  margin-top: -50px;  //加入这两行</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="如何手动设置层的覆盖关系？"><a href="#如何手动设置层的覆盖关系？" class="headerlink" title="如何手动设置层的覆盖关系？"></a>如何手动设置层的覆盖关系？</h3><hr>
+<p>添加<code>Z-index:</code>属性值如：<br><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attribute">Z-index</span>: <span class="number">1</span>; <span class="comment">/*代表元素在第一层，层数越高，越处于高层，越容易覆盖底层。层数越低，越处于下层，越容易被高层覆盖。*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="opacity属性"><a href="#opacity属性" class="headerlink" title="opacity属性"></a>opacity属性</h3><hr>
+<p>控制透明度</p>
+
+	
+	                
+	            </div>
+	            	          </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2018 JabinGP<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
