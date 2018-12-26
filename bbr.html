@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="安装谷歌bbr加速CentOS系统更新（更新到CentOS 7）
+
+yum执行更新
+  yum update
+
+查看系统版本
+  cat /etc/redhat-release
+
+输出如下（release数值大于7.3即可），则表示已升级到7.3
+  CentOS Linux release 7.3"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="JabinGP"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="CentOS7开启谷歌bbr加速"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="安装谷歌bbr加速CentOS系统更新（更新到CentOS 7）
+
+yum执行更新
+  yum update
+
+查看系统版本
+  cat /etc/redhat-release
+
+输出如下（release数值大于7.3即可），则表示已升级到7.3
+  CentOS Linux release 7.3"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="JabinGP Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://www.jabingp.cn/img/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://www.jabingp.cn/img/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>CentOS7开启谷歌bbr加速 - JabinGP Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header addHeader" style="background-image: url('/img/CentOS.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="post-heading">
+                    <h1>CentOS7开启谷歌bbr加速</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        <div>
+                        
+                       
+                        
+                            2018-12-25
+                        
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="addpadding">
+            
+	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 addFlat">
+	            	
+	            	<a class="setTags"  href="/tags/折腾教程/">折腾教程</a> 
+	            	                <h3 id="安装谷歌bbr加速"><a href="#安装谷歌bbr加速" class="headerlink" title="安装谷歌bbr加速"></a>安装谷歌bbr加速</h3><h4 id="CentOS系统更新（更新到CentOS-7）"><a href="#CentOS系统更新（更新到CentOS-7）" class="headerlink" title="CentOS系统更新（更新到CentOS 7）"></a>CentOS系统更新（更新到<a href="https://www.centos.bz/tag/centos/" target="_blank" rel="noopener">CentOS</a> 7）</h4><hr>
+<ul>
+<li><p>yum执行更新</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看系统版本</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat /etc/redhat-release</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>输出如下（release数值大于7.3即可），则表示已升级到7.3</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CentOS Linux release 7.3.1611 (Core)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="升级内核"><a href="#升级内核" class="headerlink" title="升级内核"></a>升级内核</h4><hr>
+<ul>
+<li><p>安装elrepo并升级内核</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</span><br><span class="line">rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm</span><br><span class="line">yum --enablerepo=elrepo-kernel install kernel-ml -y</span><br></pre></td></tr></table></figure>
+<p>  正常情况下将输出如下信息：</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Transaction Summary</span><br><span class="line">================================================================================</span><br><span class="line">Install  1 Package</span><br><span class="line">Total download size: 39 M</span><br><span class="line">Installed size: 169 M</span><br><span class="line">Downloading packages:</span><br><span class="line">kernel-ml-4.9.0-1.el7.elrepo.x86_64.rpm                    |  39 MB   00:00</span><br><span class="line">Running transaction check</span><br><span class="line">Running transaction test</span><br><span class="line">Transaction test succeeded</span><br><span class="line">Running transaction</span><br><span class="line">Warning: RPMDB altered outside of yum.</span><br><span class="line">  Installing : kernel-ml-4.9.0-1.el7.elrepo.x86_64                          1/1</span><br><span class="line">  Verifying  : kernel-ml-4.9.0-1.el7.elrepo.x86_64                          1/1</span><br><span class="line">Installed:</span><br><span class="line">  kernel-ml.x86_64 0:4.9.0-1.el7.elrepo</span><br><span class="line">Complete!</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更新grub文件并重启（reboot后，ssh会断开，稍等一会儿重新连接）</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egrep ^menuentry /etc/grub2.cfg | cut -f 2 -d \&apos;</span><br><span class="line">grub2-set-default 0</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<p>  出现grub2不存在的话使用一下方法：</p>
+<ol>
+<li><p>查看已经安装内核<br><code>rpm -qa | grep kernel</code><br>得到结果如下：</p>
+<ol>
+<li>kernel-3.10.0-123.el7.x86_64</li>
+<li>kernel-headers-3.10.0-514.16.1.el7.x86_64</li>
+<li>kernel-ml-4.11.0-1.el7.elrepo.x86_64</li>
+<li>kernel-tools-3.10.0-514.16.1.el7.x86_64</li>
+<li>kernel-3.10.0-514.16.1.el7.x86_64</li>
+<li>kernel-tools-libs-3.10.0-514.16.1.el7.x86_64</li>
+</ol>
+<p>在输出中看到 kernel-ml-4.11.0-1.el7.elrepo.x86_64 类似的内容，表示安装成功。</p>
+</li>
+<li><p>修改引导内核</p>
+<p> 可以手动编辑grub.conf文件，修改Grub引导顺序：<br> <code>vim /etc/grub.conf</code></p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#boot=/dev/sda</span><br><span class="line">#把这个default改成内核的顺序</span><br><span class="line">default=0</span><br><span class="line">#default=1</span><br><span class="line">timeout=5</span><br><span class="line">splashimage=(hd0,0)/grub/splash.xpm.gz</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>开机后查看内核是否已更换为4.9</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure>
+<p>  输出如下内容则表示内核4.9已经启动了（数值大于4.9即可）</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4.9.0-1.el7.elrepo.x86_64</span><br></pre></td></tr></table></figure>
+<p>  导入 elrepo 软件源的 GPG 公钥</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm</span><br></pre></td></tr></table></figure>
+<p>下载并安装新的内核</p>
+<p>启用软件源并下载安装最新稳定版内核</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum -y --enablerepo=elrepo-kernel install kernel-ml</span><br></pre></td></tr></table></figure>
+<h3 id="开启bbr"><a href="#开启bbr" class="headerlink" title="开启bbr"></a>开启bbr</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim /etc/sysctl.conf</span><br></pre></td></tr></table></figure>
+<p>添加如下内容</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">net.core.default_qdisc = fq</span><br><span class="line">net.ipv4.tcp_congestion_control = bbr</span><br></pre></td></tr></table></figure>
+<p>加载系统参数（正常情况下会输出我们之前加入的内容）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sysctl -p</span><br></pre></td></tr></table></figure>
+<p>验证bbr是否已经开启</p>
+<p>a.若</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sysctl net.ipv4.tcp_available_congestion_control</span><br></pre></td></tr></table></figure>
+<p>返回</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">net.ipv4.tcp_available_congestion_control = bbr cubic reno</span><br></pre></td></tr></table></figure>
+<p>则成功</p>
+<p>b.若</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
+<p>返回形如如下形式的信息即成功。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tcp_bbr                16384  1</span><br><span class="line">tcp_bbr                20480  0</span><br></pre></td></tr></table></figure>
+	
+	                
+	            </div>
+	            	          </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2018 JabinGP<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

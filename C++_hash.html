@@ -13,13 +13,12 @@
     
 
     
-        <meta name="description" content="1. 华南师范大学官网：（可以由此找到所有相关网站链接）
-https://www.scnu.edu.cn/
+        <meta name="description" content="散列表查找技术
 
-2. 华南师范大学国际商学院官网——学院概况、专业介绍、最新动态都在这里：
-http://ibc.scnu.edu.cn/
+散列表查找技术的思想主要是，将关键值映射到一个适当的存储位置，使得关键码与存储位置有着一一对应的关系，这样就不需要进行查找，只需要知道关键码，就能得到对应的位置。
 
-3. 综合服务平台——改密码；交网费；奖助助学等等都会用到这个："/>
+散列表、散列函数、散列地址
+采用散列技术将记录存储在一块连续的存储空间中，这块连续的存储空间称为散列表。将关键码映射"/>
     
 
     <!--Author-->
@@ -29,18 +28,17 @@ http://ibc.scnu.edu.cn/
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="华南师大常用网址集合"/>
+        <meta property="og:title" content="数据结构-散列笔记"/>
     
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="1. 华南师范大学官网：（可以由此找到所有相关网站链接）
-https://www.scnu.edu.cn/
+        <meta property="og:description" content="散列表查找技术
 
-2. 华南师范大学国际商学院官网——学院概况、专业介绍、最新动态都在这里：
-http://ibc.scnu.edu.cn/
+散列表查找技术的思想主要是，将关键值映射到一个适当的存储位置，使得关键码与存储位置有着一一对应的关系，这样就不需要进行查找，只需要知道关键码，就能得到对应的位置。
 
-3. 综合服务平台——改密码；交网费；奖助助学等等都会用到这个："/>
+散列表、散列函数、散列地址
+采用散列技术将记录存储在一块连续的存储空间中，这块连续的存储空间称为散列表。将关键码映射"/>
     
 
     <!--Open Graph Site Name-->
@@ -67,7 +65,7 @@ http://ibc.scnu.edu.cn/
 
     <!-- Title -->
     
-    <title>华南师大常用网址集合 - JabinGP Blog</title>
+    <title>数据结构-散列笔记 - JabinGP Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -171,12 +169,12 @@ http://ibc.scnu.edu.cn/
     <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
 
-<header class="intro-header addHeader" style="background-image: url('/img/scnu.jpg')">
+<header class="intro-header addHeader" style="background-image: url('/img/C++.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="post-heading">
-                    <h1>华南师大常用网址集合</h1>
+                    <h1>数据结构-散列笔记</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
@@ -184,7 +182,7 @@ http://ibc.scnu.edu.cn/
                         
                        
                         
-                            2018-12-11
+                            2018-12-25
                         
                         </div>
                     </span>
@@ -208,39 +206,58 @@ http://ibc.scnu.edu.cn/
 	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 addFlat">
 	            	
 	            	<a class="setTags"  href="/tags/学习笔记/">学习笔记</a> 
-	            	                <h4 id="1-华南师范大学官网：（可以由此找到所有相关网站链接）"><a href="#1-华南师范大学官网：（可以由此找到所有相关网站链接）" class="headerlink" title="1. 华南师范大学官网：（可以由此找到所有相关网站链接）"></a>1. 华南师范大学官网：（可以由此找到所有相关网站链接）</h4><ul>
-<li><a href="https://www.scnu.edu.cn/" target="_blank" rel="noopener">https://www.scnu.edu.cn/</a></li>
+	            	                <h3 id="散列表查找技术"><a href="#散列表查找技术" class="headerlink" title="散列表查找技术"></a>散列表查找技术</h3><hr>
+<blockquote>
+<p>散列表查找技术的思想主要是，将关键值映射到一个适当的存储位置，使得关键码与存储位置有着一一对应的关系，这样就不需要进行查找，只需要知道关键码，就能得到对应的位置。</p>
+</blockquote>
+<h4 id="散列表、散列函数、散列地址"><a href="#散列表、散列函数、散列地址" class="headerlink" title="散列表、散列函数、散列地址"></a>散列表、散列函数、散列地址</h4><hr>
+<p>采用散列技术将记录存储在一块连续的存储空间中，这块连续的存储空间称为<strong>散列表</strong>。<br>将关键码映射为散列表中适当存储位置的函数称为<strong>散列函数（hash function）</strong>，所得的存储位置称为<strong>散列地址（hash address）</strong>。</p>
+<h4 id="散列过程"><a href="#散列过程" class="headerlink" title="散列过程"></a>散列过程</h4><hr>
+<ol>
+<li>存储记录时，通过散列函数计算记录的散列地址，并按此散列地址存储该记录。</li>
+<li>查找记录时，通过同样的散列函数计算记录的散列地址，按此散列地址访问该记录。</li>
+</ol>
+<blockquote>
+<p>可以看到，散列既是一种存储方法，也是一种查找方法。</p>
+</blockquote>
+<p><em>散列方法不适用于有多个相同关键码的情况！</em><br><em>散列方法也不适用于范围查找！</em></p>
+<h4 id="散列存储时的问题"><a href="#散列存储时的问题" class="headerlink" title="散列存储时的问题"></a>散列存储时的问题</h4><hr>
+<blockquote>
+<p>如果记录按散列函数计算出的地址加入散列表时产生的冲突，就必须另外再找一个地方在存放它。<br>散列技术需要考虑的两个主要问题：</p>
+<ol>
+<li>散列函数的设计。如何设置一个简单，均匀，存储利用率高的散列函数。</li>
+<li>冲突的处理。如何采取合适的处理冲突方法来解决冲突。</li>
+</ol>
+</blockquote>
+<h4 id="散列函数的设计"><a href="#散列函数的设计" class="headerlink" title="散列函数的设计"></a>散列函数的设计</h4><hr>
+<p>散列设计一般用于处理关键码来自很大范围的记录，并将这些记录存储在一个有限的散列表中。<strong>一般来说，我们希望散列函数能够把记录以相同的概率“散列”到散列表的所有地址空间中。</strong><br>设计散列函数的原则：</p>
+<ol>
+<li>计算简单。散列函数不应该有很大的计算量，否则会降低查找效率。</li>
+<li>函数值即散列地址分布均匀。函数值要尽量均匀散步在地址空间，这样才能保证存储空间的有效利用，并减少冲突。<blockquote>
+<p>以上两点往往是矛盾的。如果散列地址均匀性比较好，散列函数的计算就必然要复杂。反之如果散列函数的计算很简单，则均匀性就可能比较差。实际使用中要根据具体情况，选择一个比较合理的方案。</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="常见的散列函数"><a href="#常见的散列函数" class="headerlink" title="常见的散列函数"></a>常见的散列函数</h4><hr>
+<ol>
+<li>直接定址法<br> 直接定址法的散列函数是关键码的线性函数，即：<pre><code>`H(key)` = `a` * `key` + `b` (a、b为常数)
+</code></pre></li>
+<li>除留余数法<br>除留余数法的基本思想是：选择某个适当的正整数<code>p</code>，以关键码除于<code>p</code>的余数作为散列地址，即：<br> <code>H(key)</code> = <code>key</code> &amp; <code>p</code></li>
+<li>数字分析法<br>数字分析法根据关键码在各个位上的分布情况，选取分布比较均匀的若干位组成散列地址。<br>数字分析法适用于事先知道关键码的分布且关键码中有若干位分布较均匀的情况。</li>
+<li>平分取中法<br>平分取中法是对关键码平方后,按散列表大小，去中间的若干位作为散列地址（平方后截取）。之所以这样，是因为一个数平方后，中间的几位分布较均匀，也就是不同的关键码较少有相同的平方后截取，从而冲突发生的概率较少。</li>
+<li>折叠法<br>折叠法是将关键码从左到右分割成位数相等的几部分，最后一部分位数可以短些，然后将这几部分叠加求和，并按散列列表长，取最后几位作为散列地址。通常分为两种叠加方法：<ol>
+<li>移位叠加：将各部分的最后一位对齐相加。</li>
+<li>间界叠加：从一端向另一端沿各部分分界来回折叠后，最后一位对齐相加。</li>
+</ol>
+<ul>
+<li>如key=25346358705<ol>
+<li>253+463+587+05</li>
+<li>253+364+587+50(奇数段正序，偶数段反序)</li>
+</ol>
+</li>
 </ul>
-<h4 id="2-华南师范大学国际商学院官网——学院概况、专业介绍、最新动态都在这里："><a href="#2-华南师范大学国际商学院官网——学院概况、专业介绍、最新动态都在这里：" class="headerlink" title="2. 华南师范大学国际商学院官网——学院概况、专业介绍、最新动态都在这里："></a>2. 华南师范大学国际商学院官网——学院概况、专业介绍、最新动态都在这里：</h4><ul>
-<li><a href="http://ibc.scnu.edu.cn/" target="_blank" rel="noopener">http://ibc.scnu.edu.cn/</a></li>
-</ul>
-<h4 id="3-综合服务平台——改密码；交网费；奖助助学等等都会用到这个："><a href="#3-综合服务平台——改密码；交网费；奖助助学等等都会用到这个：" class="headerlink" title="3. 综合服务平台——改密码；交网费；奖助助学等等都会用到这个："></a>3. 综合服务平台——改密码；交网费；奖助助学等等都会用到这个：</h4><ul>
-<li><a href="https://sso.scnu.edu.cn/AccountService/user/login.html" target="_blank" rel="noopener">https://sso.scnu.edu.cn/AccountService/user/login.html</a></li>
-</ul>
-<h4 id="4-华南师范大学迎新网："><a href="#4-华南师范大学迎新网：" class="headerlink" title="4. 华南师范大学迎新网："></a>4. 华南师范大学迎新网：</h4><ul>
-<li><a href="http://yx.scnu.edu.cn/login.portal" target="_blank" rel="noopener">http://yx.scnu.edu.cn/login.portal</a></li>
-</ul>
-<h4 id="5-华南师范大学收费服务管理系统："><a href="#5-华南师范大学收费服务管理系统：" class="headerlink" title="5. 华南师范大学收费服务管理系统："></a>5. 华南师范大学收费服务管理系统：</h4><ul>
-<li><a href="http://pay.scnu.edu.cn/" target="_blank" rel="noopener">http://pay.scnu.edu.cn/</a></li>
-</ul>
-<h4 id="6-华南师范大学图书馆——知识的海洋，珍惜丰富的资源库："><a href="#6-华南师范大学图书馆——知识的海洋，珍惜丰富的资源库：" class="headerlink" title="6. 华南师范大学图书馆——知识的海洋，珍惜丰富的资源库："></a>6. 华南师范大学图书馆——知识的海洋，珍惜丰富的资源库：</h4><ul>
-<li><a href="http://lib.scnu.edu.cn/" target="_blank" rel="noopener">http://lib.scnu.edu.cn/</a></li>
-</ul>
-<h4 id="7-华南师范大学教务管理系统——查看课表，预定教室，选课抢课（大一上学期暂时不需要）："><a href="#7-华南师范大学教务管理系统——查看课表，预定教室，选课抢课（大一上学期暂时不需要）：" class="headerlink" title="7. 华南师范大学教务管理系统——查看课表，预定教室，选课抢课（大一上学期暂时不需要）："></a>7. 华南师范大学教务管理系统——查看课表，预定教室，选课抢课（大一上学期暂时不需要）：</h4><ul>
-<li><a href="http://jwc.scnu.edu.cn/" target="_blank" rel="noopener">http://jwc.scnu.edu.cn/</a></li>
-</ul>
-<h4 id="8-华南师范大学教务网——与教学相关的内容，如辅修、交换、转专业、保研等等："><a href="#8-华南师范大学教务网——与教学相关的内容，如辅修、交换、转专业、保研等等：" class="headerlink" title="8. 华南师范大学教务网——与教学相关的内容，如辅修、交换、转专业、保研等等："></a>8. 华南师范大学教务网——与教学相关的内容，如辅修、交换、转专业、保研等等：</h4><ul>
-<li><a href="http://jw.scnu.edu.cn/" target="_blank" rel="noopener">http://jw.scnu.edu.cn/</a></li>
-</ul>
-<h4 id="9-华南师范大学校园WiFi登录界面"><a href="#9-华南师范大学校园WiFi登录界面" class="headerlink" title="9. 华南师范大学校园WiFi登录界面:"></a>9. 华南师范大学校园WiFi登录界面:</h4><ul>
-<li><a href="https://10.10.232.49:8443/eportal/index.jsp?wlanuserip=2f321fd3e688d4416c24aa3682d6fdcb&amp;wlanacname=e55860303a6c6fab1c50727cda53dbc4&amp;ssid=&amp;nasip=3505675383c054c68a3bf44b47732475&amp;snmpagentip=&amp;mac=cdc2c49dc6578b4833f621b825f967d3&amp;t=wireless-v2&amp;url=c9673a58c390d25607a221ca89305f69bf1a541be36b0ab0&amp;apmac=&amp;nasid=e55860303a6c6fab1c50727cda53dbc4&amp;vid=f470cfdebd255da5&amp;port=565accaf05848755&amp;nasportid=a4ea9de28cbfe9fc659fd94ce1242135bf78f3d0ee71ee03506ba1b7a174e22e3b96701035850794" target="_blank" rel="noopener">https://10.10.232.49:8443/eportal/index.jsp..</a></li>
-</ul>
-<h4 id="10-作业平台学者网"><a href="#10-作业平台学者网" class="headerlink" title="10. 作业平台学者网"></a>10. 作业平台学者网</h4><ul>
-<li><a href="http://www.scholat.com/" target="_blank" rel="noopener">http://www.scholat.com/</a></li>
-</ul>
-<h4 id="11-作业平台砺儒云课堂"><a href="#11-作业平台砺儒云课堂" class="headerlink" title="11. 作业平台砺儒云课堂"></a>11. 作业平台砺儒云课堂</h4><ul>
-<li><a href="http://moodle.scnu.edu.cn/" target="_blank" rel="noopener">http://moodle.scnu.edu.cn/</a></li>
-</ul>
+</li>
+</ol>
 
 	
 	                

@@ -1,8 +1,10 @@
+http://www.jabingp.cn/bbr.html
+http://www.jabingp.cn/C++_hash.html
+http://www.jabingp.cn/ghost.html
+http://www.jabingp.cn/Java_Random.html
 http://www.jabingp.cn/Java_Thread.html
 http://www.jabingp.cn/scnuNet.html
-http://www.jabingp.cn/html03.html
 http://www.jabingp.cn/tryCatchFinally.html
-http://www.jabingp.cn/QTLesson01.html
 http://www.jabingp.cn/JavaScriptMaskingKey.html
 http://www.jabingp.cn/PanamaFincaHartmannNatural.html
 http://www.jabingp.cn/DOCTYPE.html
